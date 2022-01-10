@@ -7,15 +7,18 @@ namespace Lection8_New
     {
         static void Main(string[] args)
         {
-            Dog d = new Dog();
-            d.Name = "bobik";
-            Cat c = new Cat();
-            List<IAnimal> animals = new List<IAnimal>();
-            animals.Add(d);
-            animals.Add(c);
-            foreach (var animal in animals)
+            //Cat cat = new Cat();
+            //cat.AddKittenName("K1");
+            //cat.AddKittenName("K2");
+            //foreach (var kitten in cat)
+            //{
+            //    Console.WriteLine(kitten);
+            //}
+            Number num = new Number(123456);
+
+            foreach (var item in num)
             {
-                Console.WriteLine(animal.SaySound());
+                Console.WriteLine(item);
             }
         }
     }
