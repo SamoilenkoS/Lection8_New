@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Lection8_New
 {
@@ -6,7 +7,16 @@ namespace Lection8_New
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Dog d = new Dog();
+            d.Name = "bobik";
+            Cat c = new Cat();
+            List<IAnimal> animals = new List<IAnimal>();
+            animals.Add(d);
+            animals.Add(c);
+            foreach (var animal in animals)
+            {
+                Console.WriteLine(animal.SaySound());
+            }
         }
     }
 }
