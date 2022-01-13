@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Lection8_New
 {
-    public class Cat : IAnimal, IEnumerable<string>
+    public partial class Cat : IAnimal, IEnumerable<string>
     {
         private string _kittenAName;
         private string _kittenBName;
